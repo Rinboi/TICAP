@@ -1,0 +1,133 @@
+
+.registration_warnings{
+    color: rgb(231, 29, 29);
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+}
+
+.registration_headers{
+    font-weight: 600;
+    padding: 20px 0 5px 0;
+    margin-left: 15px;
+}
+
+.registration-form{
+    margin-bottom: 20px;
+}
+
+.registration-form .container{
+    padding: 20px;
+    box-shadow: 0px 0px 3px #bbb;
+}
+
+.registration-form .container .input_dividers{
+    display: flex;
+}
+
+.registration-form .container .input_dividers .input_dividers_child{
+    margin: 5px 15px;
+}
+
+.registration-form .container .input_dividers .input_dividers_child input{
+    padding: 7px 5px;
+    border: 2px solid #bbb;
+    border-radius: 3px;
+    min-width: 200px;
+}
+
+.registration-form .container .input_dividers .input_dividers_child .button{
+    padding: 10px 5px;
+    border: 2px solid rgb(241, 17, 17);
+    border-radius: 3px;
+    background-color: rgb(197, 48, 48);
+    color: #fff;
+    min-width: 315px;
+    font-size: 1.15em;
+    cursor: pointer;
+}
+
+.registration-form .container .input_dividers .input_dividers_child .button:hover{
+    border: 2px solid rgb(241, 17, 17);
+    background-color: rgb(236, 60, 60);
+}
+
+.registration-form .container .input_dividers .input_dividers_child .input_long{
+    padding: 7px 5px;
+    border: 2px solid #bbb;
+    border-radius: 3px;
+    min-width: 430px;
+}
+
+.registration-form .container .input_dividers .input_dividers_child select{
+    padding: 7px 5px;
+    border: 2px solid #bbb;
+    border-radius: 3px;
+    min-width: 200px;
+}
+
+.registration-form .container .input_dividers .input_dividers_child p{
+    font-size: .8em;
+    color: #444;
+}
+
+.registration-success .container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #888;
+    padding: 15px;
+}
+
+.registration-success .container img{
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.registration-success .container h1{
+    font-size: 2.8em;
+    text-align: center;
+    color: rgb(6, 182, 6);
+}
+
+.registration-success .container h3{
+    color: #555;
+    font-size: .8em;
+    text-align: center;
+}
+
+.registration-success .container form input[type="text"]{
+    display: none;
+}
+
+.registration-success .container .instruction{
+    font-size:  .9em;
+    margin: 20px;
+    padding: 15px 20px;
+    background-color: rgb(255, 240, 190);
+    color: #444;
+}
+
+.registration-success .container form input[type="submit"]{
+    padding: 5px 25px;
+    display: block;
+    margin: 15px auto;
+    font-size: 1.3em;
+    background-color: rgb(6, 182, 6);
+    border: 1px solid rgb(6, 182, 6);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.registration-success .container form input[type="submit"]:hover{
+    background-color: rgb(4, 138, 4);
+}
+
+.online_registration_error .container{
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(236, 60, 60);
+    background-color: rgb(249, 255, 169);
+}

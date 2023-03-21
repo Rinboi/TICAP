@@ -1,0 +1,116 @@
+.application_interface .container{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #bbb;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.application_interface .container table{
+    margin-top: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    
+}
+.application_interface .container table tr td{
+    border: 0px;
+    padding: 20px 5px;
+    overflow-x: scroll;
+    text-align: center;
+}
+
+.application_interface .container table tr:nth-child(odd) td:first-child{
+    border-left: 3px solid rgb(37, 29, 43);
+}
+
+.application_interface .container table tr:nth-child(even) td:last-child{
+    border-right: 3px solid rgb(59, 36, 36);
+}
+
+.application_interface .container table tr td form{
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+.application_interface .container table tr td button{
+    padding: 5px 5px;
+    background-color: rgb(212, 212, 212);
+    margin: 1px 0;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.application_interface .container table tr td button:hover{
+    background-color: rgb(126, 126, 126);
+}
+
+.application_interface .container table tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+
+.test_boi_nani{
+    color: rgb(255, 176, 176);
+}
+
+.Pending{
+    background-color: rgb(234, 255, 118);
+    padding: 3px 18px;
+    border-radius: 13px;
+}
+
+.Registered{
+    background-color: rgb(47, 255, 58);
+    padding: 3px 18px;
+    border-radius: 13px;
+}
+
+.application_interface .container table tr th{
+    border: 1px inset #333;
+    padding: 5px 5px;
+}
+
+.interface_controls{
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interface_controls form input[type="search"]{
+    width: 350px;
+}
+
+.interface_controls form input{
+    padding: 10px 5px;
+}
+
+.interface_controls form select{
+    padding: 10px 5px;
+}
+
+.result{
+    padding: 35px 10px;
+    font-size: 1.3em;
+}
+
+.status_controls .container{
+    padding: 15px;
+}
+
+.status_controls .container h2{
+    padding-bottom: 20px;
+}
+
+.status_controls table{
+    width: 100%;
+}
+
+.status_controls table tr td{
+    padding: 15px;
+}
+
+.status_controls table button{
+    width: 200px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}

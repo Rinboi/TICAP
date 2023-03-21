@@ -1,0 +1,584 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.warning_message{
+    margin: 50px 0 30px 0;
+    width: 100%;
+    color: red;
+}
+
+.warning_message_small{
+    border: 3px solid rgb(216, 13, 13);
+    border-radius: 5px;
+    margin: 10px 100px;
+    padding: 20px 10px;
+    background-color: rgb(242, 255, 125);
+    color: rgb(197, 48, 48);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.warning_message_small img{
+    height: 50px;
+    margin-right: 30px;
+}
+
+.warning_message img{
+    height: 100px;
+}
+
+.warning_message .container{
+    padding: 20px;
+    background-color: rgb(255, 246, 122);
+}
+
+.warning_message .warning_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styles */
+
+header{
+
+}
+
+.admin_mode{
+    font-size: .5em;
+    padding: 0px 15px;
+    border: 1px solid #fff;
+    margin-left: 15px;
+    background-color: #fff;
+    color: rgb(224, 54, 54);
+    border-radius: 10px;
+}
+
+#top_header{
+    background-color: rgb(197, 48, 48);
+}
+
+#top_header p{
+    color: #fff;
+    font-size: .8em;
+}
+
+#top_header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+#top_header .container .top_nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8em;
+    padding: 0 10px;
+}
+
+#mid_header{
+    background-color: rgb(224, 54, 54);
+    height: 175px;
+}
+
+#mid_header .container .inner{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#mid_header .title{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#mid_header .logo{
+    margin-right: 10px;
+}
+
+#mid_header .logo img{
+    height: 100px;
+    width: 100px;
+
+}
+
+/* Image upload for news */
+
+.upload_images{
+    height: 200px;
+}
+
+.logo_input{
+    display: flex;
+    align-items: center;
+}
+
+#bottom_header{
+    height: 0;
+}
+
+#bottom_header nav{
+    transform: translateY(-50px);
+    margin-left: -50px;
+    background-color: #fff;
+    width: 110%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #888;
+    animation-name: nav_intro;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.nav-inner{
+    background-color: #fff;
+    position: absolute;
+}
+
+@keyframes nav_intro{
+    0%{
+        transform: translateY(-1000px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+
+#bottom_header nav ul li{
+    display: inline-block;
+    float: left;
+    position: relative;
+    list-style-type: none;
+}
+
+#bottom_header nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #111;
+    border-bottom: 4px solid #fff;
+    transition: all 300ms;
+}
+
+#bottom_header nav ul li a:hover{
+    border-bottom: 4px solid rgb(224, 54, 54);
+    background-color: #fafafa;
+    color: rgb(224,54,54);
+}
+
+
+/* Main */
+main{
+    margin-top: 50px;
+}
+
+main .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .container .image-slider{
+    width: 650px;
+    height: 480px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+main .container .image-slider img{
+    width: 100%;
+}
+
+main .container .social-media h3{
+    padding: 5px 10px;
+    background-color: rgb(224, 54, 54);
+    color: #fff;
+}
+
+main .container .social-media{
+    width: 300px;
+    overflow: hidden;
+}
+
+/* Events */
+#events{
+    margin-top: 15px;
+}
+
+#events h2{
+    background-color: rgb(224, 54, 54);
+    color: #fff;
+    padding: 10px 15px;
+    position: relative;
+}
+
+#events h2 button{
+    position: absolute;
+    width: 250px;
+    right: 0px;
+    top: 0;
+    padding: 0 20px;
+    height: 100%;
+    background-color: rgb(197, 48, 48);
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#events h2 button:hover{
+    background-color: rgb(228, 66, 66);
+}
+
+#events .news{
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #aaa;
+    margin: 10px;
+    border-left: 5px solid rgba(228,66,66);
+    background-color: #fafafa;
+}
+
+#events .news a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+#events .news p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: .95em;
+}
+
+#events .news .news-date{
+    color: rgb(194, 46, 46);
+    font-size: .8em;
+}
+
+.delete-button{
+    border: 2px solid rgba(160, 153, 153, 0.274);
+    background: rgb(197, 48, 48);
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.crud{
+    display: inline-block;
+}
+
+
+/* ADMIN STYLES */
+
+#admin_login{
+    padding: 50px 0;
+}
+
+#admin_login .container{
+    
+}
+
+#admin_login .container form{
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 3px #ccc;
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+}
+
+#admin_login .container form .form_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#admin_login .container form .form_inner input{
+    margin: 5px auto;
+}
+
+#admin_login .container form .form_inner input[type="text"]{
+    border: 1px solid #bbb;
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+#admin_login .container form .form_inner input[type="password"]{
+    border: 1px solid #bbb;
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+#myBtn{
+    padding: 3px 10px;
+    border: 1px solid rgb(224, 94, 54);
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgb(224,54,54), rgb(197, 48, 48));
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#admin_login .container form .form_inner input[type="submit"]{
+    padding: 3px 10px;
+    border: 1px solid rgb(224, 94, 54);
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgb(224,54,54), rgb(197, 48, 48));
+    color: #fff;
+    cursor: pointer;
+}
+
+#admin_login .container form .form_inner h2{
+    border-bottom: 2px solid #eee;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#admin_login .container form .admin_login_error{
+    padding: 20px 30px;
+    background-color: rgb(232, 255, 103);
+    color: rgb(250, 19, 19);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* admin dashboard */
+
+#application_button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#application_button a{
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(197, 48, 48);
+}
+
+#application_button a:hover{
+    background-color: rgb(224, 54, 54);
+}
+
+.admin_dashboard_header{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.admin_dashboard_header .container{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #aaa;
+}
+
+.admin_dashboard_header .container h2{
+    padding-left: 10px;
+    color: #333;
+}
+
+.admin_dashboard_content{
+
+}
+
+.admin_dashboard_content h3{
+    border-bottom: 2px solid #ddd;
+    padding: 15px 10px;
+    color: #333;
+}
+
+.admin_dashboard_content form{
+    color: #333;
+}
+
+.admin_dashboard_content form table{
+    padding: 5px;
+    margin: 15px auto;
+    box-shadow: 0px 0px 5px #999;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.admin_dashboard_content form table tr td{
+    padding: 5px 10px;
+}
+
+.admin_dashboard_content form table tr th{
+    padding: 5px 10px;
+}
+
+.admin_dashboard_content form table tr td input[type="text"] {
+    padding: 5px 5px;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.admin_dashboard_content form table tr td input[type="password"] {
+    padding: 5px 5px;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.admin_dashboard_content form table tr td input[type="submit"] {
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid rgb(224, 94, 54);
+    border-radius: 3px;
+    background: linear-gradient(90deg, rgb(224,54,54), rgb(197, 48, 48));
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Compose Interface */
+
+.composition_interface > .container{
+    box-shadow: 0px 0px 3px #bbb;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.composition_interface > .container form table{
+    padding: 10px;
+    width: 100%;    
+}
+
+.composition_interface > .container form input[type="text"]{
+    padding: 10px 5px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(160, 153, 153, 0.274);
+}
+
+.composition_interface > .container form textarea{
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid rgba(160, 153, 153, 0.274);
+}
+
+.composition_interface > .container form input[type="submit"]{
+    background-color: rgb(197, 48, 48);
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.composition_interface > .container form input[type="submit"]:hover{
+    background-color: rgb(240, 71, 71);
+}
+
+.headline{
+    margin: 45px 0 10px 0;
+    
+}
+
+.headline .container{
+    border-bottom: 1px solid #aaa;
+}
+
+.headline h2{
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.news_content .container{
+    padding: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.news_image .container{
+    overflow: hidden;
+}
+
+.news_image .container img{
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.view_all{
+    box-shadow: 0px 0px 3px #aaa;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(228, 66, 66);
+    background-color: #fafafa;
+}
+
+.view_all h3, .view_all a{
+    text-align: right;
+    padding-right: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.author{
+    font-size: .45em;
+    font-style: italic;
+    font-weight: 100;
+    display: block;
+}
